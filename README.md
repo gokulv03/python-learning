@@ -14,6 +14,7 @@ This repository is a personal learning space for practicing Python fundamentals 
 
 - `lgs.py` - A simple logic gate simulator. It prompts for binary inputs and lets you choose AND, OR, or XOR logic to compute a result.
 - `sensor_filter.py` - A sensor reading analyzer that separates valid readings from faults based on a defined numeric range.
+- `Sensor_data_sorter.py` - A refactored version of the sensor analyzer that implements the filtering logic as a reusable function and prints a summary of valid and fault readings.
 
 ## How to Run
 
@@ -23,6 +24,7 @@ This repository is a personal learning space for practicing Python fundamentals 
 ```bash
 python lgs.py
 python sensor_filter.py
+python Sensor_data_sorter.py
 ```
 
 > Make sure you have Python installed and available on your system path.
