@@ -1,0 +1,12 @@
+12:45:30 - Sensor ID P-201 is reading 120 psi.
+12:45:30 - Sensor ID F-305 is reading 45 GPM.
+12:53:22 - Sensor ID P-201 is reading 120 psi
+12:53:22 - Sensor ID F-305 is reading 45 GPM
+12:53:27 - Sensor ID P-201 is reading 120 psi
+12:53:27 - Sensor ID F-305 is reading 45 GPM
+[12:53:58] Sensor ID P-201 reading: 120
+[12:53:58] Sensor ID F-305 reading: 45
+[12:54:23] Sensor ID P-201 reading: 120
+[12:54:23] Sensor ID F-305 reading: 45
+12:54:43 - Sensor ID P-201 is reading 120 psi.
+12:54:43 - Sensor ID F-305 is reading 45 GPM.
