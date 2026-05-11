@@ -1,70 +1,83 @@
 # Python Learning Repository
 
-This repository serves as a personal playground for learning Python through hands-on practice. By implementing simple functions and building small programs incrementally, the goal is to build proficiency and confidence in Python programming.
+This repository is a personal Python learning workspace. It contains small practice programs and step-by-step improvements that help build confidence in writing Python code.
 
-## Learning Journey Overview
+## Learning Goals
 
-Started with basic scripts and progressed to more structured code, incorporating functions, data structures, and file operations. Each script demonstrates a concept or builds upon previous knowledge.
+- Practice writing simple Python scripts
+- Learn how to use conditionals, loops, functions, and data structures
+- Understand basic input/output and file handling
+- Write reusable code and organize logic into functions
+- Work with external APIs and handle runtime exceptions
+- Keep building gradually by adding new concepts to the repository
 
-## What You'll Learn
+## What You Have Learned So Far
 
-- **Basic Python Syntax**: Variables, print statements, and simple expressions.
-- **Control Flow**: Loops (`for` loops) and conditional statements (`if`, `elif`, `else`).
-- **Input and Output**: Reading user input with `input()` and displaying results with `print()`.
-- **Data Structures**: Lists for storing collections of data, and dictionaries for key-value pairs.
-- **Functions**: Defining reusable functions to organize code and avoid repetition.
-- **File I/O**: Reading from and writing to text files for data persistence.
-- **String Formatting**: Using f-strings for clean output formatting.
-- **Logic and Algorithms**: Implementing basic logic gates and data filtering algorithms.
+- Basic Python syntax with `print()` and variables
+- Conditional logic using `if`, `elif`, and `else`
+- Looping over data with `for`
+- Accepting input from users and displaying results
+- Filtering list data based on rules
+- Creating reusable functions for repeated logic
+- Using dictionaries to represent structured data
+- Reading and writing data from files
+- Formatting output cleanly with f-strings
+- Working with external web APIs using `requests`
+- Handling errors and retrying operations when something goes wrong
+- Using a virtual environment for dependency isolation
 
 ## Repository Contents
 
-- `lgs.py` - Logic Gate Simulator: Demonstrates conditional logic by simulating AND, OR, and XOR gates with user inputs.
-- `sensor_filter.py` - Sensor Filter: Introduces list processing and filtering to separate valid sensor readings from faults.
-- `Sensor_data_sorter.py` - Sensor Data Sorter: Refactors filtering into a function, showing code reusability and modular design.
-- `sensor_dict.py` - Sensor Dictionary: Uses dictionaries to store sensor metadata and loops to display formatted readings.
-- `sensor_log.txt` - Sample Log File: Contains timestamped sensor data for practicing file reading operations.
+- `lgs.py` - Logic Gate Simulator
+  - Prompts for two binary inputs and a gate type
+  - Computes AND, OR, or XOR logic and displays the result
+- `sensor_filter.py` - Sensor Filter
+  - Filters a list of sensor values into valid readings and faults
+- `Sensor_data_sorter.py` - Sensor Data Sorter
+  - Refactors sensor filtering into a reusable function
+  - Prints totals for valid and fault readings
+- `sensor_dict.py` - Sensor Dictionary Example
+  - Stores sensor metadata in dictionaries
+  - Iterates through sensor records and prints formatted output
+- `sensor_log.txt` - Sample sensor log data
+  - Timestamped sensor readings useful for file I/O practice
+- `space_monitor.py` - Space Monitor
+  - Fetches live ISS position data from a web API
+  - Uses `requests`, JSON parsing, and exception handling
+  - Retries automatically when the network connection fails
 
-## How to Run the Scripts
+## How to Run
 
-1. Ensure Python is installed on your system.
-2. Open a terminal in the repository directory.
-3. Execute any script with: `python <filename>.py`
+1. Activate your virtual environment if you have one:
+   ```bash
+   e:\python-learning\.venv\Scripts\Activate.ps1
+   ```
+2. Run any script from the project folder:
+   ```bash
+   python lgs.py
+   python sensor_filter.py
+   python Sensor_data_sorter.py
+   python sensor_dict.py
+   python space_monitor.py
+   ```
 
-Examples:
-```bash
-python lgs.py          # Run the logic gate simulator
-python sensor_filter.py # Analyze sensor data
-python Sensor_data_sorter.py # Use the sorter function
-python sensor_dict.py  # Display sensor info from dictionaries
-```
+> Note: `space_monitor.py` requires internet access and the `requests` library.
 
-For file I/O practice, you can create scripts that read from `sensor_log.txt`.
+## Practical Next Steps
 
-## Key Concepts Demonstrated
+- Add input validation to `lgs.py` so only `0` or `1` values are accepted
+- Update `Sensor_data_sorter.py` to read values from `sensor_log.txt`
+- Create a new script that writes new sensor entries into `sensor_log.txt`
+- Add a function to `sensor_dict.py` that calculates summary statistics
+- Build a safe retry mechanism and logging for `space_monitor.py`
+- Try writing a class for a sensor object or an ISS tracker
 
-- **Conditionals**: Used in `lgs.py` for gate logic and in filtering scripts for range checks.
-- **Loops**: `for` loops in all scripts for iterating over lists or data.
-- **Functions**: Introduced in `Sensor_data_sorter.py` to encapsulate logic.
-- **Data Structures**: Lists in early scripts, dictionaries in `sensor_dict.py`.
-- **File Handling**: `sensor_log.txt` as a data source for future file-reading exercises.
-- **Modularity**: Progressing from procedural code to functional code.
+## Learning Advice
 
-## Ideas for Further Practice
+- Make small changes often and test immediately
+- Comment your code to explain what each part does
+- Compare different ways to solve the same problem
+- Keep the repository as a record of your progress
+- Experiment with new Python features as you learn them
 
-- Add error handling for invalid inputs in `lgs.py`.
-- Implement file reading in `Sensor_data_sorter.py` to process `sensor_log.txt`.
-- Create a script that writes logs to `sensor_log.txt`.
-- Experiment with classes for object-oriented sensor representations.
-- Add more data structures like sets or tuples.
-- Build a simple GUI or web interface for the logic gate simulator.
-
-## Learning Tips
-
-- Run each script and modify values to see how outputs change.
-- Try rewriting scripts using different approaches (e.g., list comprehensions).
-- Add comments to explain what each part does.
-- Commit changes frequently to track progress.
-- When stuck, refer to Python documentation or experiment in a REPL.
-
-Experiment freely and enjoy the process of building Python skills one step at a time!
+This repository is a growing journal of your Python practice. Keep adding simple programs, then turn those programs into reusable functions and more organized code over time.
